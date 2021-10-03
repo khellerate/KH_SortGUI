@@ -14,36 +14,11 @@ using System.Windows.Shapes;
 
 namespace KHSortGUI
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class WINMain : Window
     {
         public WINMain()
         {
             InitializeComponent();
-        }
-
-        private void PBar_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            this.DragMove();
-        }
-
-        private void BExit_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
-
-        private void BMax_Click(object sender, RoutedEventArgs e)
-        {
-            if (Application.Current.MainWindow.WindowState == WindowState.Maximized)
-                Application.Current.MainWindow.WindowState = WindowState.Normal;
-            else Application.Current.MainWindow.WindowState = WindowState.Maximized;
-        }
-
-        private void BMin_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.MainWindow.WindowState = WindowState.Minimized;
         }
     }
 }
