@@ -68,7 +68,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Form\FMain.xaml">
+    <Page Include="Src\Color\color_root.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\Style\style_root.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Src\Template\template_root.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\VMain.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -76,8 +88,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Form\FMain.xaml.cs">
-      <DependentUpon>FMain.xaml</DependentUpon>
+    <Compile Include="Commands\Base\Command.cs" />
+    <Compile Include="Commands\LambdaCommand.cs" />
+    <Compile Include="ViewsModel\Base\ViewModel.cs" />
+    <Compile Include="ViewsModel\VmMain.cs" />
+    <Compile Include="Views\VMain.xaml.cs">
+      <DependentUpon>VMain.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -106,7 +122,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
