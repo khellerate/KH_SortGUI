@@ -9,7 +9,6 @@
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="2*"/>
                     <ColumnDefinition Width="5*"/>
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Column="0">
@@ -19,17 +18,16 @@
                             VerticalAlignment="Top"
                             HorizontalAlignment="Left"/>
                 </Grid>
-                <StackPanel Grid.Column="2"
+                <StackPanel Grid.Column="1"
                             VerticalAlignment="Top"
                             HorizontalAlignment="Right"
                             Orientation="Horizontal">
-                    <!-- ⊠ ⊟ ⊞ -->
-                    <!-- ⊠ ⊟ ⊞ -->
-                    <Button x:Name="BUT_min" Content="⊟" Click="BMin_Click"     FontSize="20"/>
-                    <Separator Margin="5,5,5,5"/>
-                    <Button x:Name="BUT_max" Content="⊞" Click="BMax_Click"     FontSize="20"/>
-                    <Separator Margin="5,5,5,5"/>
-                    <Button x:Name="BUT_ext" Content="⊠" Click="BExit_Click"    FontSize="20"/>
+                    
+                    <Button x:Name="BUT_min" Content="⊟" FontSize="20"/>
+                    <Separator Margin="5,5,5,5"/>        
+                    <Button x:Name="BUT_max" Content="⊞" FontSize="20"/>
+                    <Separator Margin="5,5,5,5"/>        
+                    <Button x:Name="BUT_ext" Content="⊠" FontSize="20"/>
                     <Separator Margin="5,5,5,5"/>
                 </StackPanel>
             </Grid>
