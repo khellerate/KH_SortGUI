@@ -80,7 +80,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\page_main.xaml">
+    <Page Include="Views\VMain.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -89,8 +89,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ViewsModel\Base\ViewModel.cs" />
-    <Compile Include="Views\page_main.xaml.cs">
-      <DependentUpon>page_main.xaml</DependentUpon>
+    <Compile Include="ViewsModel\VmMain.cs" />
+    <Compile Include="Views\VMain.xaml.cs">
+      <DependentUpon>VMain.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
