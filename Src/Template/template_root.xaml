@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ControlTemplate x:Key="CR_button_header_icon" TargetType="{x:Type Button}">
+        
+        
+        
+    </ControlTemplate>
+</ResourceDictionary>
