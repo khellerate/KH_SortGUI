@@ -88,6 +88,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Commands\Base\Command.cs" />
+    <Compile Include="Commands\LambdaCommand.cs" />
     <Compile Include="ViewsModel\Base\ViewModel.cs" />
     <Compile Include="ViewsModel\VmMain.cs" />
     <Compile Include="Views\VMain.xaml.cs">

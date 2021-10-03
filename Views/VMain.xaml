@@ -7,8 +7,6 @@
 		<vm:VmMain />
 	</Window.DataContext>
 
-
-
 	<DockPanel>
 		<!--#region Главный хедер -->
 		<Grid DockPanel.Dock="Top">
@@ -27,6 +25,12 @@
 				<MenuItem Header="⊠"/>
 			</Menu>
 		</Grid>
+		<!--#endregion-->
+
+		<!--#region Нижний статус бар -->
+		<StatusBar DockPanel.Dock="Bottom">
+			<TextBlock>Тексток тут</TextBlock>
+		</StatusBar>
 		<!--#endregion-->
 
 		<!--#region Меню с вкладками-->
